@@ -15,6 +15,7 @@ a.out
 
 # --- Fichiers de dépendances générés ---
 depend-prog
+depend-myprog
 .depend
 
 # --- Fichiers Système (Junk) ---
