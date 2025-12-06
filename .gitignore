@@ -1,0 +1,26 @@
+# --- Fichiers de Compilation (Temporaires) ---
+*.o
+*.obj
+
+# --- Executables (Windows) ---
+*.exe
+*.dll
+
+# --- Executables (Mac / Linux) ---
+# Comme ils n'ont pas d'extension, il faut mettre leur nom exact
+# Remplacez "mon_programme" par le nom défini dans votre Makefile (EXEC)
+mon_programme
+myprog
+a.out
+
+# --- Fichiers de dépendances générés ---
+depend-prog
+.depend
+
+# --- Fichiers Système (Junk) ---
+.DS_Store       # Poubelle Mac
+Thumbs.db       # Poubelle Windows
+
+# --- Configuration VS Code (Optionnel mais recommandé) ---
+# On ne partage généralement pas sa config perso (.vscode)
+.vscode/
