@@ -8,6 +8,6 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
-    std::cout << "Helo brave new world" << std::endl;
+    std::cout << "Hello brave new world" << std::endl;
     return 0;
 }
