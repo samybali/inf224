@@ -25,7 +25,7 @@ class Video : public Multimedia {
 
         void play() const override {
 
-            std::string arg = "start" + m_filePath + "&";
+            std::string arg = "start " + m_filePath;
 
             system(arg.data());
 
