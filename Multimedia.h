@@ -4,7 +4,8 @@
 #include <string>
 #include <iostream>
 
-class Multimedia {
+class Multimedia
+{
     protected:
        std::string m_name, m_filePath;
        

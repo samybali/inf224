@@ -5,7 +5,8 @@
 #include <string>
 #include <cstdlib>
 
-class Photo : public Multimedia {
+class Photo : public Multimedia
+{
     private:
         double m_latitude, m_longitude;
 
@@ -20,20 +21,19 @@ class Photo : public Multimedia {
         
         void setLongitude(double lon) {m_longitude = lon; }
 
-        void display(std::ostream & s) const override {
-
+        void display(std::ostream & s) const override
+        {
             Multimedia::display(s);
 
             s << "Type: Photo" << std::endl;
             s << "Latitude: " << m_latitude << "Longitude: " << m_longitude << std::endl;
         }
 
-        void play() const override {
-
+        void play() const override 
+        {
             std::string arg = "start " + m_filePath;
 
             system(arg.data());
-
         }
 };
 
