@@ -1,13 +1,12 @@
-#include "Multimedia.h"
+#include "Photo.h"
 #include <iostream>
 
 
 int main(int argc, const char* argv[])
 {
-    Multimedia* m = new Multimedia("Name", "/images/picture.jpg");
+    Photo p("Image", "carte.tif", 48, 2);
+    p.play();
+ 
 
-    m->display(std::cout);
-
-    delete m;
     return 0;
 }

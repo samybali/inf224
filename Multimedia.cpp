@@ -2,14 +2,14 @@
 
 
 Multimedia::Multimedia() {
-    this->name = "";
-    this->filePath = "";
+    this->m_name = "";
+    this->m_filePath = "";
 }
 
-Multimedia::Multimedia(std::string name, std::string filePath) {
+Multimedia::Multimedia(std::string name, std::string path) {
 
-    this->name = name;
-    this->filePath = filePath;
+    this->m_name = name;
+    this->m_filePath = path;
 }
 
 Multimedia::~Multimedia() {
@@ -17,22 +17,22 @@ Multimedia::~Multimedia() {
 }
 
 std::string Multimedia::getName() const {
-    return name;
+    return m_name;
 }
 
 std::string Multimedia::getfilePath() const {
-    return filePath;
+    return m_filePath;
 }
 
-void Multimedia::setName(std::string n) {
-    name = n;
+void Multimedia::setName(std::string name) {
+    m_name = name;
 }
 
-void Multimedia::setfilePath(std::string nf) {
-    filePath = nf;
+void Multimedia::setfilePath(std::string path) {
+    m_filePath = path;
 }
 
 void Multimedia::display(std::ostream & s) const {
-    s << name << std::endl;
-    s << filePath << std::endl;
+    s << "Name: " << m_name << std::endl;
+    s << "Path to file: " << m_filePath << std::endl;
 }

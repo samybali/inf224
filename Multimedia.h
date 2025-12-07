@@ -1,23 +1,33 @@
+#ifndef multimedia_h
+#define multimedia_h
+
 #include <string>
 #include <iostream>
 
 class Multimedia {
-    private:
-       std::string name, filePath;
+    protected:
+       std::string m_name, m_filePath;
        
     public:
         Multimedia();
-        Multimedia(std::string name, std::string filePath);
+
+        Multimedia(std::string name, std::string path);
 
         virtual ~Multimedia();
 
         std::string getName() const;
+
         std::string getfilePath() const;
 
         void setName(std::string name);
-        void setfilePath(std::string filePath);
 
-        void display(std::ostream & s) const;
+        void setfilePath(std::string path);
+
+        virtual void display(std::ostream & s) const;
+
+        virtual void play() const = 0;
 
 
 };
+
+#endif
