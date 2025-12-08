@@ -6,11 +6,14 @@
 
 class Video : public Multimedia
 {
+    friend class Manager;
+
     protected:
         int m_length;
 
-    public:
         Video(std::string name, std::string path, int len) : Multimedia(name, path), m_length(len) {}
+
+    public:
 
         int getLength() const { return m_length; }
 

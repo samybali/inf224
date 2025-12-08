@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <memory>
 
 class Multimedia
 {
@@ -30,5 +31,7 @@ class Multimedia
 
 
 };
+
+using MultimediaPtr = std::shared_ptr<Multimedia>;
 
 #endif

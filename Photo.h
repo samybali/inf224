@@ -7,12 +7,14 @@
 
 class Photo : public Multimedia
 {
-    private:
+    friend class Manager;
+
+    protected:
         double m_latitude, m_longitude;
 
-    public:
-        Photo(std::string name, std::string path, double lat, double lon) : Multimedia(name, path), m_latitude(lat), m_longitude(lon) {}
+        Photo(std::string name, std::string path, double lat = 0.0, double lon = 0.0) : Multimedia(name, path), m_latitude(lat), m_longitude(lon) {}
 
+    public:
         double getLatitude() const { return m_latitude; }
 
         double getLongitude() const { return m_longitude; }

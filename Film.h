@@ -24,6 +24,48 @@ class Film : public Video
 
         }
 
+        Film(const Film& other) : Video(other)
+        { 
+            m_chaptersNb = other.m_chaptersNb;
+
+            if (other.m_chapters != nullptr)
+            {
+                m_chapters = new int[m_chaptersNb];
+                for (int i = 0; i < m_chaptersNb; ++i)
+                {
+                    m_chapters[i] = other.m_chapters[i];
+                }
+            }
+            else
+            {
+            m_chapters = nullptr;
+            }
+        }
+
+        Film& operator=(const Film& other)
+        {
+            if (this == &other) return *this;
+
+            Video::operator=(other);
+
+            delete[] m_chapters;
+
+            m_chaptersNb = other.m_chaptersNb;
+
+            if (other.m_chapters != nullptr)
+            {
+                m_chapters = new int[m_chaptersNb];
+                for (int i = 0; i < m_chaptersNb; ++i)
+                {
+                    m_chapters[i] = other.m_chapters[i];
+                }
+            }
+            else
+            {
+                m_chapters = nullptr;
+            }
+        return *this;
+        }
         ~Film()
         {
             delete[] m_chapters;
