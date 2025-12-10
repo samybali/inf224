@@ -19,7 +19,7 @@ class Group : public std::list<MultimediaPtr>
 
         void display(std::ostream & s) const
         {
-            s << "Group: " << m_name << std::endl;
+            s << "Group: " << m_name << " ";
 
             for (auto it : *this)
             {

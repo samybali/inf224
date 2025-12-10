@@ -3,19 +3,26 @@
 #include "Video.h"
 #include "Film.h"
 #include "Group.h"
+#include "Manager.h"
 #include <iostream>
 
 
 int main(int argc, const char* argv[])
 {
-    MultimediaPtr ptr1(new Photo("name", "path", 0, 0));
+    Manager m;
 
-    Group g = Group("g1");
 
-    g.push_back(ptr1);
+    std::shared_ptr<Group> g = m.createGroup("g");
+    std::shared_ptr<Photo> pic = m.createPhoto("pic", "path");
 
-    ptr1.reset();
+    g->push_back(pic);
+    g->push_back(m.createVideo("vid", "pathvid", 43));
 
+    g->display(std::cout);
+    pic->display(std::cout);
+
+    m.removeMultimedia("pic");
+    m.displayGroup("g", std::cout);
 
 
     return 0;

@@ -32,6 +32,9 @@ class Manager
 
         void play(std::string name) const;
 
+        void removeMultimedia(std::string name);
+        void removeGroup(std::string name);
+
 
 
 };

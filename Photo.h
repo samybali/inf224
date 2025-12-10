@@ -27,8 +27,7 @@ class Photo : public Multimedia
         {
             Multimedia::display(s);
 
-            s << "Type: Photo" << std::endl;
-            s << "Latitude: " << m_latitude << "Longitude: " << m_longitude << std::endl;
+            s << "Type: Photo " << "Latitude: " << m_latitude << " Longitude: " << m_longitude;
         }
 
         void play() const override 

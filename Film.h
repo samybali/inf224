@@ -106,12 +106,12 @@ class Film : public Video
             {
             for (int i = 0; i < m_chaptersNb; ++i)
             {
-                s << "Chapter " << i <<  ": " << m_chapters[i] << std::endl;
+                s << "Chapter " << i <<  ": " << m_chapters[i];
             }
             } 
             else
             {
-            s << "No chapters" << std::endl;
+            s << "No chapters";
         }
         }
 };

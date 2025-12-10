@@ -23,8 +23,7 @@ class Video : public Multimedia
         {
             Multimedia::display(s);
 
-            s << "Type: Video" << std::endl;
-            s << "Length: " << m_length << std::endl;
+            s << "Type: Video " << "Length: " << m_length << " ";
         }
 
         void play() const override

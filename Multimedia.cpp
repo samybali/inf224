@@ -16,7 +16,7 @@ Multimedia::Multimedia(std::string name, std::string path)
 
 Multimedia::~Multimedia()
 {
-    std::cout << m_name << " Destroyed" << std::endl;
+    std::cout << m_name << " destroyed" << std::endl;
 }
 
 std::string Multimedia::getName() const
@@ -41,6 +41,5 @@ void Multimedia::setfilePath(std::string path)
 
 void Multimedia::display(std::ostream & s) const
 {
-    s << "Name: " << m_name << std::endl;
-    s << "Path to file: " << m_filePath << std::endl;
+    s << "Name: " << m_name << " Path: " << m_filePath << " ";
 }

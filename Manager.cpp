@@ -4,7 +4,7 @@ Manager::Manager() {}
 
 Manager::~Manager() {}
 
-std::shared_ptr<Photo> Manager::createPhoto(std::string name, std::string path, double lat = 0.0, double lon = 0.0)
+std::shared_ptr<Photo> Manager::createPhoto(std::string name, std::string path, double lat, double lon)
 {
     std::shared_ptr<Photo> photo(new Photo(name, path, lat, lon));
 
@@ -50,7 +50,7 @@ void Manager::displayMultimedia(std::string name, std::ostream & s) const
     }
     else
     {
-        s << name << "not found" << std::endl;
+        s << name << " not found";
     }
 }
 
@@ -64,7 +64,7 @@ void Manager::displayGroup(std::string name, std::ostream & s) const
     }
     else
     {
-        s << name << "not found" << std::endl;
+        s << name << " not found";
     }
 }
 
@@ -78,8 +78,30 @@ void Manager::play(std::string name) const
     }
     else
     {
-        std::cout << name << "not found" << std::endl;
+        std::cout << name << " not found" << std::endl;
     }
 
 
+}
+
+void Manager::removeMultimedia(std::string name)
+{
+    auto it = objectsTab.find(name);
+
+    if (it != objectsTab.end())
+    {
+        MultimediaPtr ptr = it->second;
+
+        for (auto & group : groupsTab)
+        {
+            group.second->remove(ptr);
+        }
+    }
+
+    objectsTab.erase(it);
+}
+
+void Manager::removeGroup(std::string name)
+{
+    groupsTab.erase(name);
 }
