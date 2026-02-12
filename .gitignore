@@ -10,18 +10,19 @@
 # --- Executables (Mac / Linux) ---
 # Comme ils n'ont pas d'extension, il faut mettre leur nom exact
 # Remplacez "mon_programme" par le nom défini dans votre Makefile (EXEC)
-mon_programme
-myprog
+cpp/mon_programme
+cpp/myprog
+cpp/server
+cpp/client
 a.out
-client
-server
+
 
 # --- Fichiers de dépendances générés ---
-depend-prog
-depend-myprog
+cpp/depend-prog
+cpp/depend-myprog
+cpp/depend-client
+cpp/depend-server
 .depend
-depend-client
-depend-server
 
 # --- Fichiers Système (Junk) ---
 .DS_Store       # Poubelle Mac
