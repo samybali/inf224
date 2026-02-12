@@ -1,0 +1,12 @@
+<map id="cpp/Film.h" name="cpp/Film.h">
+<area shape="rect" id="Node000001" title="Header file for the Film class." alt="" coords="224,5,307,31"/>
+<area shape="rect" id="Node000002" href="$_manager_8h.html" title="Header file for the Manager class." alt="" coords="167,79,273,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,42,230,80,226,77,248,45"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="280,153,379,178"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="279,43,327,153,322,152,275,47"/>
+<area shape="rect" id="Node000003" href="$_manager_8cpp.html" title=" " alt="" coords="5,153,126,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,113,93,155,91,150,178,110"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="252,111,314,152,308,152,250,116"/>
+<area shape="rect" id="Node000005" href="$server_8cpp.html" title=" " alt="" coords="150,153,256,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="216,118,208,154,204,150,212,121"/>
+</map>

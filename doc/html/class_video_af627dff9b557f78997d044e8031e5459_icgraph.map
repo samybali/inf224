@@ -1,0 +1,10 @@
+<map id="Video::Video" name="Video::Video">
+<area shape="rect" id="Node000001" title="Protected constructor." alt="" coords="290,29,385,55"/>
+<area shape="rect" id="Node000002" href="$class_film.html#a71002f3f02dd2e03d9059bfc86c17118" title="Copy constructor." alt="" coords="20,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,39,100,24,100,19,276,34"/>
+<area shape="rect" id="Node000003" href="$class_film.html#a0cd6fa68a043bbf0d5bad7e7db5dfad6" title="Constructor for the Film class." alt="" coords="163,55,242,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,54,243,63,242,57,272,54"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="146,50,99,34,100,29,151,48"/>
+<area shape="rect" id="Node000004" href="$class_film.html#a3162aa6c8d939fcd5afe49d47202cbf5" title="Assignment operator." alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="144,68,115,70,115,65,149,67"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SocketBuffer" name="SocketBuffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="62,427,199,921"/>
+<area shape="rect" id="Node000002" href="$class_socket.html" title=" " alt="" coords="5,5,122,356"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,353,98,410,92,411,87,359"/>
+<area shape="rect" id="Node000003" href="$struct_input_buffer.html" title=" " alt="" coords="146,107,250,255"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,252,169,411,164,410,188,257"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Manager::findandRemove" name="Manager::findandRemove">
+<area shape="rect" id="Node000001" title="Generic removal method." alt="" coords="5,31,176,56"/>
+<area shape="rect" id="Node000002" href="$class_manager.html#ad9aea008ac742ef9e777a0e5139070be" title="Removes a Group from the manager." alt="" coords="238,5,395,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,31,225,28,220,29,177,37"/>
+<area shape="rect" id="Node000003" href="$class_manager.html#a0ba8432af245464490cea64339cccc92" title="Removes a Multimedia object from the manager." alt="" coords="224,55,409,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,50,211,56,205,56,176,55"/>
+</map>

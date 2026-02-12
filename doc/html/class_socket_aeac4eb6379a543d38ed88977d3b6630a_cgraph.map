@@ -1,0 +1,6 @@
+<map id="Socket::~Socket" name="Socket::~Socket">
+<area shape="rect" id="Node000001" title="Destructor (closes the socket)." alt="" coords="5,29,125,55"/>
+<area shape="rect" id="Node000002" href="$class_socket.html#aef06605c6725958004116983f1a2051f" title="Closes the socket." alt="" coords="173,29,274,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,40,160,42,154,42,125,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="196,28,191,21,194,11,205,5,223,3,243,5,254,15,249,14,241,10,223,8,207,10,198,15,196,20,201,30"/>
+</map>

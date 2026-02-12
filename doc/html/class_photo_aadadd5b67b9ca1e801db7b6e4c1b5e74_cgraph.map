@@ -1,0 +1,5 @@
+<map id="Photo::display" name="Photo::display">
+<area shape="rect" id="Node000001" title="Displays the photo&#39;s attributes." alt="" coords="5,5,110,31"/>
+<area shape="rect" id="Node000002" href="$class_multimedia.html#acc42056e7fba23e1bf31ab6f2cb2f8f5" title="Displays the content of the object." alt="" coords="158,5,291,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,16,145,18,139,18,110,21"/>
+</map>

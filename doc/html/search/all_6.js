@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['getchapters_0',['getChapters',['../class_film.html#a7bdcc9cb81df92862f98b3b6b286ab4a',1,'Film']]],
+  ['getchaptersnb_1',['getChaptersNb',['../class_film.html#a44d269053d0873eef953983ee663ea60',1,'Film']]],
+  ['getfilepath_2',['getfilePath',['../class_multimedia.html#abcb7e73f46d2519d6bcf7802b88141e6',1,'Multimedia']]],
+  ['getlatitude_3',['getLatitude',['../class_photo.html#abf3e0bbc8dbe20b79aab846eedfee74d',1,'Photo']]],
+  ['getlength_4',['getLength',['../class_video.html#aec254221ef43f05ee7711012707cfef3',1,'Video']]],
+  ['getlongitude_5',['getLongitude',['../class_photo.html#af784f282da3cfab4a5e4c45b4da3b3f8',1,'Photo']]],
+  ['getname_6',['getName',['../class_group.html#a2441b4048116108fe8f65bdf71d02494',1,'Group::getName()'],['../class_multimedia.html#a6105129da1041cc546f67fbd79f244f4',1,'Multimedia::getName()']]],
+  ['getreceivebuffersize_7',['getReceiveBufferSize',['../class_socket.html#a53a0a6980058ce02034033b05f6ca389',1,'Socket']]],
+  ['getreuseaddress_8',['getReuseAddress',['../class_socket.html#a440e7ee9303d454df0c51fe6125cd2af',1,'Socket']]],
+  ['getsendbuffersize_9',['getSendBufferSize',['../class_socket.html#acb2d3979ff562c2ffd60b12a1b4c9897',1,'Socket']]],
+  ['getsolinger_10',['getSoLinger',['../class_socket.html#ae3545855771edf076843e2e07fa7d3cd',1,'Socket']]],
+  ['getsotimeout_11',['getSoTimeout',['../class_socket.html#a38b17de459b22ab45db16e538b963c49',1,'Socket']]],
+  ['gettcpnodelay_12',['getTcpNoDelay',['../class_socket.html#a2539928ed0829df5070384f907ea48f7',1,'Socket']]],
+  ['group_13',['Group',['../class_group.html',1,'Group'],['../class_group.html#aedf365c9c158196352645b2f026c8f47',1,'Group::Group()']]],
+  ['group_2eh_14',['Group.h',['../_group_8h.html',1,'']]],
+  ['groupptr_15',['GroupPtr',['../_group_8h.html#a39c11e38578c734765a185f82eb65d45',1,'Group.h']]]
+];

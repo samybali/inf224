@@ -1,0 +1,100 @@
+\doxysection{Window Class Reference}
+\hypertarget{class_window}{}\label{class_window}\index{Window@{Window}}
+
+
+The main GUI frame for the Remote Control Application.  
+
+
+
+
+Inheritance diagram for Window:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Window:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_window_ad0552903a3d5b009c0d882f9ad2571ff}{Window}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_window}{Window} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{class_window_a2936348a2e7d763e3be09f3b56d609a2}{main}} (String\+[$\,$]\+ args)
+\begin{DoxyCompactList}\small\item\em Main entry point of the client application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main GUI frame for the Remote Control Application. 
+
+This class inherits from JFrame and provides a graphical user interface to interact with the C++ \doxylink{class_multimedia}{Multimedia} Server. It includes a text area to display server responses, a menu bar, and a toolbar. It uses the \doxylink{class_client}{Client} class to establish a TCP connection. 
+
+\label{doc-constructors}
+\Hypertarget{class_window_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_window_ad0552903a3d5b009c0d882f9ad2571ff}\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily \label{class_window_ad0552903a3d5b009c0d882f9ad2571ff} 
+Window.\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_window}{Window} class. 
+
+Initializes the connection to the server (\doxylink{class_client}{Client}). Builds the graphical interface (Menu Bar, Tool Bar, Text Area). Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_window_ad0552903a3d5b009c0d882f9ad2571ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_window_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_window_a2936348a2e7d763e3be09f3b56d609a2}\index{Window@{Window}!main@{main}}
+\index{main@{main}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{class_window_a2936348a2e7d763e3be09f3b56d609a2} 
+void Window.\+main (\begin{DoxyParamCaption}\item[{String\+[$\,$]\+}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Main entry point of the client application. 
+
+Configures the look and feel (specifically for mac\+OS) and launches the GUI on the Event Dispatch Thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Command line arguments (not used). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_window_a2936348a2e7d763e3be09f3b56d609a2_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+swing/\+\doxymbox{\hyperlink{_window_8java}{Window.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Socket::Socket" name="Socket::Socket">
+<area shape="rect" id="Node000001" title="Creates a Socket from an existing socket file descriptor." alt="" coords="5,5,117,31"/>
+<area shape="rect" id="Node000002" href="$class_socket.html#a1a662407744738aa56d1ccb6d7be26eb" title=" " alt="" coords="165,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,16,152,18,147,18,117,21"/>
+</map>

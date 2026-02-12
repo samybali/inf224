@@ -1,0 +1,9 @@
+<map id="Socket::startup" name="Socket::startup">
+<area shape="rect" id="Node000001" title=" " alt="" coords="241,55,351,80"/>
+<area shape="rect" id="Node000002" href="$class_server_socket.html#a2b3098589541243241ca25495155186c" title="Creates a listening socket that waits for connection requests by TCP/IP clients." alt="" coords="5,5,193,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,51,153,34,153,29,229,49"/>
+<area shape="rect" id="Node000003" href="$class_socket.html#a8e3f095dfe84d6599761c4ca54900487" title="Creates a Socket from an existing socket file descriptor." alt="" coords="43,55,155,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,68,155,70,155,65,228,67"/>
+<area shape="rect" id="Node000004" href="$class_socket.html#acd3cb39bc957be2f34c91b9e262e1cec" title=" " alt="" coords="43,104,155,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,84,154,106,153,101,224,85"/>
+</map>

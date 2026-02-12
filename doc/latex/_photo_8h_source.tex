@@ -1,0 +1,49 @@
+\doxysection{Photo.\+h}
+\hypertarget{_photo_8h_source}{}\label{_photo_8h_source}\index{cpp/Photo.h@{cpp/Photo.h}}
+\doxymbox{\hyperlink{_photo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ photo\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ photo\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_multimedia_8h}{Multimedia.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_photo_ab4cdf9d26c86190d368f1fb076cbf0c9}{Photo}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_photo_adddd5c43ff870a047aa66db4edf82a7e}{Manager}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_photo_a997fb1032307021121838f47316fb191}{m\_latitude}};\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_photo_aa242c692141c2dff15ca3e6f30ffbd2f}{m\_longitude}};\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_photo_ab4cdf9d26c86190d368f1fb076cbf0c9}{Photo}}(std::string\ name,\ std::string\ path,\ \textcolor{keywordtype}{double}\ lat\ =\ 0.0,\ \textcolor{keywordtype}{double}\ lon\ =\ 0.0)\ :\ \doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}(name,\ path),\ \doxymbox{\hyperlink{class_photo_a997fb1032307021121838f47316fb191}{m\_latitude}}(lat),\ \doxymbox{\hyperlink{class_photo_aa242c692141c2dff15ca3e6f30ffbd2f}{m\_longitude}}(lon)\ \{\}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_photo_abf3e0bbc8dbe20b79aab846eedfee74d}{getLatitude}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_photo_a997fb1032307021121838f47316fb191}{m\_latitude}};\ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_photo_af784f282da3cfab4a5e4c45b4da3b3f8}{getLongitude}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_photo_aa242c692141c2dff15ca3e6f30ffbd2f}{m\_longitude}};\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_photo_a7de9a25292e39a9f597b3390f9388e72}{setLatitude}}(\textcolor{keywordtype}{double}\ lat)\ \{\doxymbox{\hyperlink{class_photo_a997fb1032307021121838f47316fb191}{m\_latitude}}\ =\ lat;\ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_photo_a8e7adc473c0af5af9a5a14da7a4279f0}{setLongitude}}(\textcolor{keywordtype}{double}\ lon)\ \{\doxymbox{\hyperlink{class_photo_aa242c692141c2dff15ca3e6f30ffbd2f}{m\_longitude}}\ =\ lon;\ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_photo_aadadd5b67b9ca1e801db7b6e4c1b5e74}{display}}(std::ostream\ \&\ s)\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00078\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_multimedia_acc42056e7fba23e1bf31ab6f2cb2f8f5}{Multimedia::display}}(s);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ s\ <<\ \textcolor{stringliteral}{"{}Type:\ Photo\ "{}}\ <<\ \textcolor{stringliteral}{"{}Latitude:\ "{}}\ <<\ \doxymbox{\hyperlink{class_photo_a997fb1032307021121838f47316fb191}{m\_latitude}}\ <<\ \textcolor{stringliteral}{"{}\ Longitude:\ "{}}\ <<\ \doxymbox{\hyperlink{class_photo_aa242c692141c2dff15ca3e6f30ffbd2f}{m\_longitude}};}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_photo_a98b55224b5f9bd016cb08aa2e9a64e46}{play}}()\textcolor{keyword}{\ const\ override\ }}
+\DoxyCodeLine{00091\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ arg\ =\ \textcolor{stringliteral}{"{}open\ "{}}\ +\ \doxymbox{\hyperlink{class_multimedia_aa0b55f16e8affb857ae4aaa93314cbf2}{m\_filePath}}\ +\ \textcolor{stringliteral}{"{}\ \&"{}};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ system(arg.data());}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

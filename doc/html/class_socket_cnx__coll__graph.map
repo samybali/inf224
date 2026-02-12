@@ -1,0 +1,12 @@
+<map id="SocketCnx" name="SocketCnx">
+<area shape="rect" id="Node000001" title="Connection with a given client. Each SocketCnx uses a different thread." alt="" coords="91,992,225,1099"/>
+<area shape="rect" id="Node000002" href="$class_t_c_p_server.html" title=" " alt="" coords="5,620,110,728"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,725,51,779,53,841,62,905,83,967,88,978,83,978,78,969,57,906,47,841,46,779,51,730"/>
+<area shape="rect" id="Node000003" href="$class_socket.html" title=" " alt="" coords="105,5,222,356"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,356,161,975,156,974,159,356"/>
+<area shape="rect" id="Node000004" href="$class_socket_buffer.html" title=" " alt="" coords="233,427,370,921"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="212,353,231,414,226,414,212,359"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,869,216,922,192,978,187,975,211,920,232,873"/>
+<area shape="rect" id="Node000005" href="$struct_input_buffer.html" title=" " alt="" coords="250,107,354,255"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="303,252,304,411,299,410,301,257"/>
+</map>

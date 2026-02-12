@@ -1,0 +1,253 @@
+\doxysection{Video Class Reference}
+\hypertarget{class_video}{}\label{class_video}\index{Video@{Video}}
+
+
+Represents a video object with a duration.  
+
+
+
+
+{\ttfamily \+\#include $<$Video.\+h$>$}
+
+
+
+Inheritance diagram for Video:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_video__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Video:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_video__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_video_aec254221ef43f05ee7711012707cfef3}{get\+Length}} () const
+\begin{DoxyCompactList}\small\item\em Gets the duration of the video. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_video_a944ea7522fccf467e044d8f6fa1c2e15}{set\+Length}} (int len)
+\begin{DoxyCompactList}\small\item\em Sets the duration of the video. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_video_a3d598fde1227ad5c7c55d48f80796741}{display}} (std::\+ostream \&s) const override
+\begin{DoxyCompactList}\small\item\em Displays the video\textquotesingle{}s attributes. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_video_a89e11497f4f200f387805b10bd42922d}{play}} () const override
+\begin{DoxyCompactList}\small\item\em Plays the video using the default video player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_multimedia}{Multimedia}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Initializes name and path to empty strings. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_multimedia_ae286736b31f20ab436a100471821bef5}{Multimedia}} (std::\+string name, std::\+string path)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_multimedia_ab280f9ce1d0a1291c9b1ab876e854c94}{\texorpdfstring{$\sim$}{\string~}\+Multimedia}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{class_multimedia_a6105129da1041cc546f67fbd79f244f4}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the object. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{class_multimedia_abcb7e73f46d2519d6bcf7802b88141e6}{getfile\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Gets the file path. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_multimedia_ae7587faa573715bcbaa786a0d83f4871}{set\+Name}} (std::\+string name)
+\begin{DoxyCompactList}\small\item\em Sets a new name for the object. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_multimedia_a2f7c02c30510867cd840825555d168ef}{setfile\+Path}} (std::\+string path)
+\begin{DoxyCompactList}\small\item\em Sets a new file path for the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_video_af627dff9b557f78997d044e8031e5459}{Video}} (std::\+string name, std::\+string path, int len)
+\begin{DoxyCompactList}\small\item\em Protected constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}{m\+\_\+length}}
+\begin{DoxyCompactList}\small\item\em The duration of the video in seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_multimedia}{Multimedia}}}
+\begin{DoxyCompactItemize}
+\item 
+std::\+string \doxymbox{\hyperlink{class_multimedia_ac808942502f0965bb25e076ce3ba20c8}{m\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em The name of the multimedia object. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{class_multimedia_aa0b55f16e8affb857ae4aaa93314cbf2}{m\+\_\+file\+Path}}
+\begin{DoxyCompactList}\small\item\em The full path to the media file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_video_adddd5c43ff870a047aa66db4edf82a7e}{Manager}}
+\begin{DoxyCompactList}\small\item\em Friend class declaration allows \doxylink{class_manager}{Manager} to access protected constructors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a video object with a duration. 
+
+This class inherits from \doxylink{class_multimedia}{Multimedia} and adds a length attribute (duration). It overrides the \doxylink{class_video_a3d598fde1227ad5c7c55d48f80796741}{display()} and \doxylink{class_video_a89e11497f4f200f387805b10bd42922d}{play()} methods to handle specific video behaviors.
+
+Note:\+ The constructor is protected to enforce the Factory design pattern. Instances of \doxylink{class_video}{Video} should be created via the \doxylink{class_manager}{Manager} class. 
+
+\label{doc-constructors}
+\Hypertarget{class_video_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_video_af627dff9b557f78997d044e8031e5459}\index{Video@{Video}!Video@{Video}}
+\index{Video@{Video}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{Video()}{Video()}}
+{\footnotesize\ttfamily \label{class_video_af627dff9b557f78997d044e8031e5459} 
+Video::\+\+Video (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+string}]{path}{, }\item[{int}]{len}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Protected constructor. 
+
+Can only be called by the \doxylink{class_manager}{Manager} class (factory) or derived classes (like \doxylink{class_film}{Film}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the video. \\
+\hline
+{\em path} & The full path to the video file. \\
+\hline
+{\em len} & The duration of the video. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_video_af627dff9b557f78997d044e8031e5459_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_video_af627dff9b557f78997d044e8031e5459_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_video_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_video_a3d598fde1227ad5c7c55d48f80796741}\index{Video@{Video}!display@{display}}
+\index{display@{display}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_video_a3d598fde1227ad5c7c55d48f80796741} 
+virtual void Video::\+display (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{s}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the video\textquotesingle{}s attributes. 
+
+Calls the base \doxylink{class_multimedia_acc42056e7fba23e1bf31ab6f2cb2f8f5}{Multimedia::\+display()} first, then prints the type ("{}\+Video"{}) and the length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The output stream. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \doxymbox{\hyperlink{class_multimedia_acc42056e7fba23e1bf31ab6f2cb2f8f5}{Multimedia}}.
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_film_a270eb422900f0163992b4fa519a3cb4f}{Film}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_video_a3d598fde1227ad5c7c55d48f80796741_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_video_a3d598fde1227ad5c7c55d48f80796741_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_video_aec254221ef43f05ee7711012707cfef3}\index{Video@{Video}!getLength@{getLength}}
+\index{getLength@{getLength}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{class_video_aec254221ef43f05ee7711012707cfef3} 
+int Video::\+get\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the duration of the video. 
+
+\begin{DoxyReturn}{Returns}
+The length as an integer. 
+\end{DoxyReturn}
+\Hypertarget{class_video_a89e11497f4f200f387805b10bd42922d}\index{Video@{Video}!play@{play}}
+\index{play@{play}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_video_a89e11497f4f200f387805b10bd42922d} 
+void Video::\+play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Plays the video using the default video player. 
+
+Uses the system command "{}open"{} (standard on mac\+OS) followed by the file path. The command is executed in the background (\&). 
+
+Implements \doxymbox{\hyperlink{class_multimedia_a1fa4ae371afc516559955b38e0392acb}{Multimedia}}.
+
+\Hypertarget{class_video_a944ea7522fccf467e044d8f6fa1c2e15}\index{Video@{Video}!setLength@{setLength}}
+\index{setLength@{setLength}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{setLength()}{setLength()}}
+{\footnotesize\ttfamily \label{class_video_a944ea7522fccf467e044d8f6fa1c2e15} 
+void Video::\+set\+Length (\begin{DoxyParamCaption}\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+
+
+Sets the duration of the video. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & The new length value. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-related-members}
+\Hypertarget{class_video_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_video_adddd5c43ff870a047aa66db4edf82a7e}\index{Video@{Video}!Manager@{Manager}}
+\index{Manager@{Manager}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{Manager}{Manager}}
+{\footnotesize\ttfamily \label{class_video_adddd5c43ff870a047aa66db4edf82a7e} 
+friend class \doxymbox{\hyperlink{class_manager}{Manager}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Friend class declaration allows \doxylink{class_manager}{Manager} to access protected constructors. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_video_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}\index{Video@{Video}!m\_length@{m\_length}}
+\index{m\_length@{m\_length}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{m\_length}{m\_length}}
+{\footnotesize\ttfamily \label{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8} 
+int Video::\+m\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The duration of the video in seconds. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+cpp/\+\doxymbox{\hyperlink{_video_8h}{Video.\+h}}\end{DoxyCompactItemize}

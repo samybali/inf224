@@ -1,6 +1,7 @@
 # --- Fichiers de Compilation (Temporaires) ---
 *.o
 *.obj
+*.class
 
 # --- Executables (Windows) ---
 *.exe

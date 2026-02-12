@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['send_0',['send',['../class_socket.html#aadd260f15afadf0c31fa3dcf88d0ea49',1,'Socket::send()'],['../class_client.html#ab26831c395da92b5893066f9ce7963a4',1,'Client.send()']]],
+  ['sendto_1',['sendTo',['../class_socket.html#aef5c4ba848f475f117b89bac531ac150',1,'Socket']]],
+  ['serversocket_2',['ServerSocket',['../class_server_socket.html#a2b3098589541243241ca25495155186c',1,'ServerSocket']]],
+  ['setchapters_3',['setChapters',['../class_film.html#ace1972517df9083b8a68b8bac6fc20f1',1,'Film']]],
+  ['setfilepath_4',['setfilePath',['../class_multimedia.html#a2f7c02c30510867cd840825555d168ef',1,'Multimedia']]],
+  ['setlatitude_5',['setLatitude',['../class_photo.html#a7de9a25292e39a9f597b3390f9388e72',1,'Photo']]],
+  ['setlength_6',['setLength',['../class_video.html#a944ea7522fccf467e044d8f6fa1c2e15',1,'Video']]],
+  ['setlongitude_7',['setLongitude',['../class_photo.html#a8e7adc473c0af5af9a5a14da7a4279f0',1,'Photo']]],
+  ['setname_8',['setName',['../class_multimedia.html#ae7587faa573715bcbaa786a0d83f4871',1,'Multimedia']]],
+  ['setreadseparator_9',['setReadSeparator',['../class_socket_buffer.html#aca9ca0b2defa3b9e08bbbe6abafe3f16',1,'SocketBuffer']]],
+  ['setreceivebuffersize_10',['setReceiveBufferSize',['../class_socket.html#a06ff0dd6837c9f51948df655fc2713cd',1,'Socket::setReceiveBufferSize()'],['../class_server_socket.html#ab34154bc6114c638ae02f5e018121099',1,'ServerSocket::setReceiveBufferSize()']]],
+  ['setreuseaddress_11',['setReuseAddress',['../class_socket.html#ab02b997fa7e251d596116e95c9ccaf97',1,'Socket::setReuseAddress()'],['../class_server_socket.html#ae60d7cc31ad535e5d3cac42e38b8ec98',1,'ServerSocket::setReuseAddress()']]],
+  ['setsendbuffersize_12',['setSendBufferSize',['../class_socket.html#afc49ad6cc259a0006ca13bb22fdd7383',1,'Socket']]],
+  ['setsolinger_13',['setSoLinger',['../class_socket.html#a41cc1caae51e3e83e16ce2c20689ed03',1,'Socket']]],
+  ['setsotimeout_14',['setSoTimeout',['../class_socket.html#ad65a22ec40902e2c0a98c5d4ac885f99',1,'Socket::setSoTimeout()'],['../class_server_socket.html#aedb9144c9c375fcb14ac47bcb9d2eb17',1,'ServerSocket::setSoTimeout()']]],
+  ['settcpnodelay_15',['setTcpNoDelay',['../class_socket.html#a7bc0110f3bedbb18f26b05ece01553fa',1,'Socket::setTcpNoDelay()'],['../class_server_socket.html#a9e5e1ee852ba26156c757a0086b780fe',1,'ServerSocket::setTcpNoDelay()']]],
+  ['setwriteseparator_16',['setWriteSeparator',['../class_socket_buffer.html#a165d87f2460de769fb09d84a46a793a4',1,'SocketBuffer']]],
+  ['shutdowninput_17',['shutdownInput',['../class_socket.html#a417b47af24de10184192de00d9112589',1,'Socket']]],
+  ['shutdownoutput_18',['shutdownOutput',['../class_socket.html#a650128aee2581e6695c6812d8afe14b5',1,'Socket']]],
+  ['socket_19',['Socket',['../class_socket.html#acd3cb39bc957be2f34c91b9e262e1cec',1,'Socket::Socket(int type=SOCK_STREAM)'],['../class_socket.html#a8e3f095dfe84d6599761c4ca54900487',1,'Socket::Socket(int type, SOCKET sockfd)']]],
+  ['socket_20',['socket',['../class_socket_buffer.html#ace5301cb9f4b36153759d72cfc7e7969',1,'SocketBuffer']]],
+  ['socketbuffer_21',['SocketBuffer',['../class_socket_buffer.html#ac5989bcaf64234947934c7106af1cf38',1,'SocketBuffer::SocketBuffer(Socket *, size_t inputSize=8192, size_t ouputSize=8192)'],['../class_socket_buffer.html#a739a80a7bb5d2603d8d0d9a88293bad8',1,'SocketBuffer::SocketBuffer(Socket &amp;, size_t inputSize=8192, size_t ouputSize=8192)']]],
+  ['socketcnx_22',['SocketCnx',['../class_socket_cnx.html#acd004e809a99928860ffa94cbde99ae1',1,'SocketCnx']]],
+  ['startup_23',['startup',['../class_socket.html#a1a662407744738aa56d1ccb6d7be26eb',1,'Socket']]]
+];

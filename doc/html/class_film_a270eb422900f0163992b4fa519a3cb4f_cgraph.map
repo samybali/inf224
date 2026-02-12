@@ -1,0 +1,7 @@
+<map id="Film::display" name="Film::display">
+<area shape="rect" id="Node000001" title="Displays the film&#39;s information and its chapters." alt="" coords="5,5,101,31"/>
+<area shape="rect" id="Node000002" href="$class_video.html#a3d598fde1227ad5c7c55d48f80796741" title="Displays the video&#39;s attributes." alt="" coords="149,5,252,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,16,136,18,131,18,101,21"/>
+<area shape="rect" id="Node000003" href="$class_multimedia.html#acc42056e7fba23e1bf31ab6f2cb2f8f5" title="Displays the content of the object." alt="" coords="300,5,433,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,16,287,18,282,18,253,21"/>
+</map>

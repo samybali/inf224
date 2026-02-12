@@ -1,0 +1,5 @@
+<map id="Video::display" name="Video::display">
+<area shape="rect" id="Node000001" title="Displays the video&#39;s attributes." alt="" coords="5,5,109,31"/>
+<area shape="rect" id="Node000002" href="$class_multimedia.html#acc42056e7fba23e1bf31ab6f2cb2f8f5" title="Displays the content of the object." alt="" coords="157,5,290,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,16,144,18,138,18,109,21"/>
+</map>

@@ -1,0 +1,105 @@
+\doxysection{Group Class Reference}
+\hypertarget{class_group}{}\label{class_group}\index{Group@{Group}}
+
+
+Represents a named group of \doxylink{class_multimedia}{Multimedia} objects.  
+
+
+
+
+{\ttfamily \+\#include $<$Group.\+h$>$}
+
+
+
+Inheritance diagram for Group:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_group__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Group:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_group__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_group_aedf365c9c158196352645b2f026c8f47}{Group}} (std::\+string name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{class_group_a2441b4048116108fe8f65bdf71d02494}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the group. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_group_ad1443eb8ea5bc367ce0a562d776a28cf}{display}} (std::\+ostream \&s) const
+\begin{DoxyCompactList}\small\item\em Displays the attributes of the group and all its members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a named group of \doxylink{class_multimedia}{Multimedia} objects. 
+
+This class inherits from std::\+list$<$\+Multimedia\+Ptr$>$, which means it acts as a standard container (list) of shared pointers to \doxylink{class_multimedia}{Multimedia} objects. You can use standard list methods (push\+\_\+back, size, begin, end, etc.) directly. The memory management of the objects contained in the list is handled automatically thanks to smart pointers. 
+
+\label{doc-constructors}
+\Hypertarget{class_group_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_group_aedf365c9c158196352645b2f026c8f47}\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}}
+{\footnotesize\ttfamily \label{class_group_aedf365c9c158196352645b2f026c8f47} 
+Group::\+\+Group (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the group. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_group_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_group_ad1443eb8ea5bc367ce0a562d776a28cf}\index{Group@{Group}!display@{display}}
+\index{display@{display}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_group_ad1443eb8ea5bc367ce0a562d776a28cf} 
+void Group::\+display (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{s}{}\end{DoxyParamCaption}) const}
+
+
+
+Displays the attributes of the group and all its members. 
+
+It iterates through the list and calls the display method of each \doxylink{class_multimedia}{Multimedia} object. The output is formatted with a pipe separator \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} to ensure compatibility with the TCP server protocol (sending the whole group as a single line).
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The output stream (std::\+ostream) to write to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_a2441b4048116108fe8f65bdf71d02494}\index{Group@{Group}!getName@{getName}}
+\index{getName@{getName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_group_a2441b4048116108fe8f65bdf71d02494} 
+std::\+string Group::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the name of the group. 
+
+\begin{DoxyReturn}{Returns}
+The name of the group as a string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+cpp/\+\doxymbox{\hyperlink{_group_8h}{Group.\+h}}\end{DoxyCompactItemize}

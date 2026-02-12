@@ -1,0 +1,7 @@
+<map id="Manager::findandDisplay" name="Manager::findandDisplay">
+<area shape="rect" id="Node000001" title="Generic search method." alt="" coords="5,31,171,56"/>
+<area shape="rect" id="Node000002" href="$class_manager.html#a6f99e36d0c929009fb8eb873776cd3e6" title="Searches for a Group and writes its details to the stream." alt="" coords="233,5,388,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,31,220,28,215,29,172,37"/>
+<area shape="rect" id="Node000003" href="$class_manager.html#a7d833a76aeab2c56ba685a4fa125d252" title="Searches for a Multimedia object and writes its details to the stream." alt="" coords="219,55,402,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,50,206,56,200,56,171,55"/>
+</map>

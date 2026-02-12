@@ -1,0 +1,43 @@
+\doxysection{Multimedia.\+h}
+\hypertarget{_multimedia_8h_source}{}\label{_multimedia_8h_source}\index{cpp/Multimedia.h@{cpp/Multimedia.h}}
+\doxymbox{\hyperlink{_multimedia_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ multimedia\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ multimedia\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_multimedia_ac808942502f0965bb25e076ce3ba20c8}{m\_name}};\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_multimedia_aa0b55f16e8affb857ae4aaa93314cbf2}{m\_filePath}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}(std::string\ name,\ std::string\ path);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_multimedia_ab280f9ce1d0a1291c9b1ab876e854c94}{\string~Multimedia}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_multimedia_a6105129da1041cc546f67fbd79f244f4}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_multimedia_abcb7e73f46d2519d6bcf7802b88141e6}{getfilePath}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_multimedia_ae7587faa573715bcbaa786a0d83f4871}{setName}}(std::string\ name);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_multimedia_a2f7c02c30510867cd840825555d168ef}{setfilePath}}(std::string\ path);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_multimedia_acc42056e7fba23e1bf31ab6f2cb2f8f5}{display}}(std::ostream\ \&\ s)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_multimedia_a1fa4ae371afc516559955b38e0392acb}{play}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00093\ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{_multimedia_8h_a05d41e4e110e20f6ae397be147ab1980}{MultimediaPtr}}\ =\ std::shared\_ptr<Multimedia>;}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,14 @@
+<map id="Multimedia::Multimedia" name="Multimedia::Multimedia">
+<area shape="rect" id="Node000001" title="Default constructor. Initializes name and path to empty strings." alt="" coords="435,31,591,56"/>
+<area shape="rect" id="Node000002" href="$class_photo.html#ab4cdf9d26c86190d368f1fb076cbf0c9" title="Protected constructor." alt="" coords="290,5,387,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="417,30,388,28,388,23,422,30"/>
+<area shape="rect" id="Node000003" href="$class_video.html#af627dff9b557f78997d044e8031e5459" title="Protected constructor." alt="" coords="291,55,386,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="422,56,387,64,386,58,417,57"/>
+<area shape="rect" id="Node000004" href="$class_film.html#a71002f3f02dd2e03d9059bfc86c17118" title="Copy constructor." alt="" coords="20,31,100,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="274,65,100,50,100,44,276,60"/>
+<area shape="rect" id="Node000005" href="$class_film.html#a0cd6fa68a043bbf0d5bad7e7db5dfad6" title="Constructor for the Film class." alt="" coords="163,80,242,106"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="278,79,243,88,242,83,273,80"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="146,75,99,60,100,54,151,73"/>
+<area shape="rect" id="Node000006" href="$class_film.html#a3162aa6c8d939fcd5afe49d47202cbf5" title="Assignment operator." alt="" coords="5,80,115,106"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="144,93,115,95,115,90,149,93"/>
+</map>

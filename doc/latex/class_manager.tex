@@ -1,0 +1,431 @@
+\doxysection{Manager Class Reference}
+\hypertarget{class_manager}{}\label{class_manager}\index{Manager@{Manager}}
+
+
+Central class that manages all \doxylink{class_multimedia}{Multimedia} objects and Groups.  
+
+
+
+
+{\ttfamily \+\#include $<$Manager.\+h$>$}
+
+
+
+Collaboration diagram for Manager:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Initializes the internal maps. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_manager_a322cad25d7007438b3a043ad02253d29}{\texorpdfstring{$\sim$}{\string~}\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. Thanks to smart pointers (shared\+\_\+ptr), the memory of all managed objects is automatically released when the \doxylink{class_manager}{Manager} is destroyed. \end{DoxyCompactList}\item 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_photo}{Photo}} $>$ \doxymbox{\hyperlink{class_manager_acfe29d9dc66d0770431053d94c4c239b}{create\+Photo}} (std::\+string name, std::\+string path, double lat=0.\+0, double lon=0.\+0)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_photo}{Photo} and adds it to the manager. \end{DoxyCompactList}\item 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_video}{Video}} $>$ \doxymbox{\hyperlink{class_manager_adccb0137ed1e32b137122629a9df7973}{create\+Video}} (std::\+string name, std::\+string path, int len)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_video}{Video} and adds it to the manager. \end{DoxyCompactList}\item 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_film}{Film}} $>$ \doxymbox{\hyperlink{class_manager_a055f1af949c85dfedf390d6f4c272c44}{create\+Film}} (std::\+string name, std::\+string path, int len, int chapters\+Nb, int \texorpdfstring{$\ast$}{*}chapters)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_film}{Film} and adds it to the manager. \end{DoxyCompactList}\item 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_group}{Group}} $>$ \doxymbox{\hyperlink{class_manager_a2ba0590f9fd29b0d667f3b8069a1227a}{create\+Group}} (std::\+string name)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_group}{Group} and adds it to the manager. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_manager_a7d833a76aeab2c56ba685a4fa125d252}{display\+Multimedia}} (std::\+string name, std::\+ostream \&s) const
+\begin{DoxyCompactList}\small\item\em Searches for a \doxylink{class_multimedia}{Multimedia} object and writes its details to the stream. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_manager_a6f99e36d0c929009fb8eb873776cd3e6}{display\+Group}} (std::\+string name, std::\+ostream \&s) const
+\begin{DoxyCompactList}\small\item\em Searches for a \doxylink{class_group}{Group} and writes its details to the stream. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_manager_a13d7a7a02067bcfabe1abb31fe0201e4}{findand\+Display}} (std::\+string name, std::\+ostream \&s) const
+\begin{DoxyCompactList}\small\item\em Generic search method. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_manager_a124fb0ae9d8b51321362260d66a73755}{play}} (std::\+string name) const
+\begin{DoxyCompactList}\small\item\em Plays a multimedia object on the server. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_manager_a0ba8432af245464490cea64339cccc92}{remove\+Multimedia}} (std::\+string name)
+\begin{DoxyCompactList}\small\item\em Removes a \doxylink{class_multimedia}{Multimedia} object from the manager. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_manager_ad9aea008ac742ef9e777a0e5139070be}{remove\+Group}} (std::\+string name)
+\begin{DoxyCompactList}\small\item\em Removes a \doxylink{class_group}{Group} from the manager. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_manager_a691062bd27f576e91428d1a70e6d7e59}{findand\+Remove}} (std::\+string name, std::\+ostream \&s)
+\begin{DoxyCompactList}\small\item\em Generic removal method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Central class that manages all \doxylink{class_multimedia}{Multimedia} objects and Groups. 
+
+The \doxylink{class_manager}{Manager} acts as a factory to create objects (\doxylink{class_photo}{Photo}, \doxylink{class_video}{Video}, \doxylink{class_film}{Film}, \doxylink{class_group}{Group}) and as a database to store them using std::\+map containers. It ensures the consistency of the data (e.\+g., preventing duplicate names) and handles interactions such as displaying, playing, or removing items. 
+
+\label{doc-constructors}
+\Hypertarget{class_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}\index{Manager@{Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily \label{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b} 
+Manager::\+\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor. Initializes the internal maps. 
+
+\Hypertarget{class_manager_a322cad25d7007438b3a043ad02253d29}\index{Manager@{Manager}!````~Manager@{\texorpdfstring{$\sim$}{\string~}Manager}}
+\index{````~Manager@{\texorpdfstring{$\sim$}{\string~}Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Manager()}{\string~Manager()}}
+{\footnotesize\ttfamily \label{class_manager_a322cad25d7007438b3a043ad02253d29} 
+Manager::\+\texorpdfstring{$\sim$}{\string~}\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. Thanks to smart pointers (shared\+\_\+ptr), the memory of all managed objects is automatically released when the \doxylink{class_manager}{Manager} is destroyed. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_manager_a055f1af949c85dfedf390d6f4c272c44}\index{Manager@{Manager}!createFilm@{createFilm}}
+\index{createFilm@{createFilm}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createFilm()}{createFilm()}}
+{\footnotesize\ttfamily \label{class_manager_a055f1af949c85dfedf390d6f4c272c44} 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_film}{Film}} $>$ Manager::\+create\+Film (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+string}]{path}{, }\item[{int}]{len}{, }\item[{int}]{chapters\+Nb}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{chapters}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{class_film}{Film} and adds it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique name of the film. \\
+\hline
+{\em path} & The file path of the film. \\
+\hline
+{\em len} & The total duration. \\
+\hline
+{\em chapters\+Nb} & Number of chapters. \\
+\hline
+{\em chapters} & Array of chapter durations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \doxylink{class_film}{Film}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_multimedia_exception}{Multimedia\+Exception}} & If the name is invalid or already exists. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_manager_a2ba0590f9fd29b0d667f3b8069a1227a}\index{Manager@{Manager}!createGroup@{createGroup}}
+\index{createGroup@{createGroup}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createGroup()}{createGroup()}}
+{\footnotesize\ttfamily \label{class_manager_a2ba0590f9fd29b0d667f3b8069a1227a} 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_group}{Group}} $>$ Manager::\+create\+Group (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{class_group}{Group} and adds it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \doxylink{class_group}{Group}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_multimedia_exception}{Multimedia\+Exception}} & If the name is invalid or already exists. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_manager_a2ba0590f9fd29b0d667f3b8069a1227a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_acfe29d9dc66d0770431053d94c4c239b}\index{Manager@{Manager}!createPhoto@{createPhoto}}
+\index{createPhoto@{createPhoto}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createPhoto()}{createPhoto()}}
+{\footnotesize\ttfamily \label{class_manager_acfe29d9dc66d0770431053d94c4c239b} 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_photo}{Photo}} $>$ Manager::\+create\+Photo (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+string}]{path}{, }\item[{double}]{lat}{ = {\ttfamily 0.0}, }\item[{double}]{lon}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{class_photo}{Photo} and adds it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique name of the photo. \\
+\hline
+{\em path} & The file path of the photo. \\
+\hline
+{\em lat} & The latitude (default 0.\+0). \\
+\hline
+{\em lon} & The longitude (default 0.\+0). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \doxylink{class_photo}{Photo}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_multimedia_exception}{Multimedia\+Exception}} & If the name is invalid or already exists. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_manager_acfe29d9dc66d0770431053d94c4c239b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_adccb0137ed1e32b137122629a9df7973}\index{Manager@{Manager}!createVideo@{createVideo}}
+\index{createVideo@{createVideo}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createVideo()}{createVideo()}}
+{\footnotesize\ttfamily \label{class_manager_adccb0137ed1e32b137122629a9df7973} 
+std::\+shared\+\_\+ptr$<$ \doxymbox{\hyperlink{class_video}{Video}} $>$ Manager::\+create\+Video (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+string}]{path}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{class_video}{Video} and adds it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique name of the video. \\
+\hline
+{\em path} & The file path of the video. \\
+\hline
+{\em len} & The duration of the video. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \doxylink{class_video}{Video}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_multimedia_exception}{Multimedia\+Exception}} & If the name is invalid or already exists. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_manager_adccb0137ed1e32b137122629a9df7973_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a6f99e36d0c929009fb8eb873776cd3e6}\index{Manager@{Manager}!displayGroup@{displayGroup}}
+\index{displayGroup@{displayGroup}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{displayGroup()}{displayGroup()}}
+{\footnotesize\ttfamily \label{class_manager_a6f99e36d0c929009fb8eb873776cd3e6} 
+void Manager::\+display\+Group (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+ostream \&}]{s}{}\end{DoxyParamCaption}) const}
+
+
+
+Searches for a \doxylink{class_group}{Group} and writes its details to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the group to find. \\
+\hline
+{\em s} & The output stream. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a6f99e36d0c929009fb8eb873776cd3e6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a7d833a76aeab2c56ba685a4fa125d252}\index{Manager@{Manager}!displayMultimedia@{displayMultimedia}}
+\index{displayMultimedia@{displayMultimedia}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{displayMultimedia()}{displayMultimedia()}}
+{\footnotesize\ttfamily \label{class_manager_a7d833a76aeab2c56ba685a4fa125d252} 
+void Manager::\+display\+Multimedia (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+ostream \&}]{s}{}\end{DoxyParamCaption}) const}
+
+
+
+Searches for a \doxylink{class_multimedia}{Multimedia} object and writes its details to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object to find. \\
+\hline
+{\em s} & The output stream. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a7d833a76aeab2c56ba685a4fa125d252_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a13d7a7a02067bcfabe1abb31fe0201e4}\index{Manager@{Manager}!findandDisplay@{findandDisplay}}
+\index{findandDisplay@{findandDisplay}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{findandDisplay()}{findandDisplay()}}
+{\footnotesize\ttfamily \label{class_manager_a13d7a7a02067bcfabe1abb31fe0201e4} 
+void Manager::\+findand\+Display (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+ostream \&}]{s}{}\end{DoxyParamCaption}) const}
+
+
+
+Generic search method. 
+
+Searches first in the \doxylink{class_multimedia}{Multimedia} objects map, and if not found, searches in the Groups map. Writes the result to the output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the element (object or group) to find. \\
+\hline
+{\em s} & The output stream. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a13d7a7a02067bcfabe1abb31fe0201e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_manager_a13d7a7a02067bcfabe1abb31fe0201e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a691062bd27f576e91428d1a70e6d7e59}\index{Manager@{Manager}!findandRemove@{findandRemove}}
+\index{findandRemove@{findandRemove}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{findandRemove()}{findandRemove()}}
+{\footnotesize\ttfamily \label{class_manager_a691062bd27f576e91428d1a70e6d7e59} 
+void Manager::\+findand\+Remove (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{, }\item[{std::\+ostream \&}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Generic removal method. 
+
+Attempts to find and remove an element by name, checking first for \doxylink{class_multimedia}{Multimedia} objects, then for Groups.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the element to remove. \\
+\hline
+{\em s} & The output stream to log the result. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a691062bd27f576e91428d1a70e6d7e59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_manager_a691062bd27f576e91428d1a70e6d7e59_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a124fb0ae9d8b51321362260d66a73755}\index{Manager@{Manager}!play@{play}}
+\index{play@{play}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_manager_a124fb0ae9d8b51321362260d66a73755} 
+bool Manager::\+play (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{}\end{DoxyParamCaption}) const}
+
+
+
+Plays a multimedia object on the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the object was found and played, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{class_manager_a124fb0ae9d8b51321362260d66a73755_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_ad9aea008ac742ef9e777a0e5139070be}\index{Manager@{Manager}!removeGroup@{removeGroup}}
+\index{removeGroup@{removeGroup}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{removeGroup()}{removeGroup()}}
+{\footnotesize\ttfamily \label{class_manager_ad9aea008ac742ef9e777a0e5139070be} 
+void Manager::\+remove\+Group (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Removes a \doxylink{class_group}{Group} from the manager. 
+
+This does NOT delete the objects contained within the group, only the group container itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the group to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_multimedia_exception}{Multimedia\+Exception}} & If the group is not found. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_ad9aea008ac742ef9e777a0e5139070be_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a0ba8432af245464490cea64339cccc92}\index{Manager@{Manager}!removeMultimedia@{removeMultimedia}}
+\index{removeMultimedia@{removeMultimedia}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{removeMultimedia()}{removeMultimedia()}}
+{\footnotesize\ttfamily \label{class_manager_a0ba8432af245464490cea64339cccc92} 
+void Manager::\+remove\+Multimedia (\begin{DoxyParamCaption}\item[{std::\+string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Removes a \doxylink{class_multimedia}{Multimedia} object from the manager. 
+
+This method also removes the object from any Groups that contain it to ensure data consistency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_multimedia_exception}{Multimedia\+Exception}} & If the object is not found. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a0ba8432af245464490cea64339cccc92_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+cpp/\+\doxymbox{\hyperlink{_manager_8h}{Manager.\+h}}\item 
+cpp/\+\doxymbox{\hyperlink{_manager_8cpp}{Manager.\+cpp}}\end{DoxyCompactItemize}

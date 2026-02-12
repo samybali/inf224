@@ -1,0 +1,126 @@
+\doxysection{Film.\+h}
+\hypertarget{_film_8h_source}{}\label{_film_8h_source}\index{cpp/Film.h@{cpp/Film.h}}
+\doxymbox{\hyperlink{_film_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ film\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ film\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_video_8h}{Video.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_film_a0cd6fa68a043bbf0d5bad7e7db5dfad6}{Film}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_video_af627dff9b557f78997d044e8031e5459}{Video}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_chaptersNb;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}*\ m\_chapters;\ \ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_film_a0cd6fa68a043bbf0d5bad7e7db5dfad6}{Film}}(std::string\ name,\ std::string\ path,\ \textcolor{keywordtype}{int}\ len,\ \textcolor{keywordtype}{int}\ chaptersNb\ =\ 0,\ \textcolor{keywordtype}{int}*\ chapters\ =\ \textcolor{keyword}{nullptr})\ :\ \doxymbox{\hyperlink{class_video_af627dff9b557f78997d044e8031e5459}{Video}}(name,\ path,\ len)}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ m\_chaptersNb\ =\ 0;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (chaptersNb\ >\ 0\ \&\&\ chapters\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_film_ace1972517df9083b8a68b8bac6fc20f1}{setChapters}}(chaptersNb,\ chapters);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_film_a71002f3f02dd2e03d9059bfc86c17118}{Film}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_film_a0cd6fa68a043bbf0d5bad7e7db5dfad6}{Film}}\&\ other)\ :\ \doxymbox{\hyperlink{class_video_af627dff9b557f78997d044e8031e5459}{Video}}(other)}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ m\_chaptersNb\ =\ other.m\_chaptersNb;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (other.m\_chapters\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ new\ int[m\_chaptersNb];}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for\ (int\ i\ =\ 0;\ i\ <\ m\_chaptersNb;\ ++i)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters[i]\ =\ other.m\_chapters[i];}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_film_a0cd6fa68a043bbf0d5bad7e7db5dfad6}{Film}}\&\ \doxymbox{\hyperlink{class_film_a3162aa6c8d939fcd5afe49d47202cbf5}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_film_a0cd6fa68a043bbf0d5bad7e7db5dfad6}{Film}}\&\ other)}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ \&other)\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ Video::operator=(other);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ m\_chapters;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ m\_chaptersNb\ =\ other.m\_chaptersNb;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (other.m\_chapters\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[m\_chaptersNb];}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ m\_chaptersNb;\ ++i)}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters[i]\ =\ other.m\_chapters[i];}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_film_a8dab653f8a6c0635ca5ddbe0bbdd9a25}{\string~Film}}()}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ m\_chapters;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_film_ace1972517df9083b8a68b8bac6fc20f1}{setChapters}}(\textcolor{keywordtype}{int}\ chaptersNb,\ \textcolor{keywordtype}{int}*\ chapters)}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_chaptersNb\ >\ 0\ \&\&\ m\_chapters\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ m\_chapters;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ m\_chaptersNb\ =\ chaptersNb;}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_chaptersNb\ >\ 0\ \&\&\ chapters\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[m\_chaptersNb];}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ m\_chaptersNb;\ ++i)\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters[i]\ =\ chapters[i];}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_chapters\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_film_a44d269053d0873eef953983ee663ea60}{getChaptersNb}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_chaptersNb;\ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}*\ \doxymbox{\hyperlink{class_film_a7bdcc9cb81df92862f98b3b6b286ab4a}{getChapters}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_chapters;\ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_film_a270eb422900f0163992b4fa519a3cb4f}{display}}(std::ostream\ \&\ s)\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00173\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_video_a3d598fde1227ad5c7c55d48f80796741}{Video::display}}(s);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_chaptersNb\ >\ 0\ \&\&\ m\_chapters\ !=\ \textcolor{keyword}{nullptr})\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ m\_chaptersNb;\ ++i)}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s\ <<\ \textcolor{stringliteral}{"{}Chapter\ "{}}\ <<\ i\ <<\ \ \textcolor{stringliteral}{"{}:\ "{}}\ <<\ m\_chapters[i];}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ s\ <<\ \textcolor{stringliteral}{"{}No\ chapters"{}};}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00188\ \};}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

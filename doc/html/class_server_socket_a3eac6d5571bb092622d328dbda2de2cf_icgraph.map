@@ -1,0 +1,6 @@
+<map id="ServerSocket::close" name="ServerSocket::close">
+<area shape="rect" id="Node000001" title="Closes the socket." alt="" coords="249,29,388,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="354,14,343,10,318,8,296,10,283,15,281,20,287,30,282,28,275,21,280,11,294,5,318,3,345,5,360,15"/>
+<area shape="rect" id="Node000002" href="$class_server_socket.html#a510674d924c2544e6b0069e39c36516b" title=" " alt="" coords="5,29,201,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="231,42,201,45,201,40,236,42"/>
+</map>

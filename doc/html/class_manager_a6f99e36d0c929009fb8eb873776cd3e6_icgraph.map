@@ -1,0 +1,9 @@
+<map id="Manager::displayGroup" name="Manager::displayGroup">
+<area shape="rect" id="Node000001" title="Searches for a Group and writes its details to the stream." alt="" coords="316,31,471,56"/>
+<area shape="rect" id="Node000002" href="$class_manager.html#a13d7a7a02067bcfabe1abb31fe0201e4" title="Generic search method." alt="" coords="103,5,268,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,32,268,31,268,26,303,32"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title=" " alt="" coords="161,55,210,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,54,211,67,210,62,298,54"/>
+<area shape="rect" id="Node000003" href="$server_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,20,56,21,54,16,89,17"/>
+</map>

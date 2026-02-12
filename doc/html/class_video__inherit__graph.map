@@ -1,0 +1,7 @@
+<map id="Video" name="Video">
+<area shape="rect" id="Node000001" title="Represents a video object with a duration." alt="" coords="21,303,110,450"/>
+<area shape="rect" id="Node000003" href="$class_film.html" title="Represents a movie with chapters." alt="" coords="5,498,125,707"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="66,462,68,499,63,498,65,468"/>
+<area shape="rect" id="Node000002" href="$class_multimedia.html" title="Abstract base class representing a generic multimedia object." alt="" coords="14,5,117,255"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,267,68,303,63,303,65,272"/>
+</map>

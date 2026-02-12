@@ -1,0 +1,12 @@
+<map id="Film::Film" name="Film::Film">
+<area shape="rect" id="Node000001" title="Copy constructor." alt="" coords="5,31,85,56"/>
+<area shape="rect" id="Node000002" href="$class_film.html#a0cd6fa68a043bbf0d5bad7e7db5dfad6" title="Constructor for the Film class." alt="" coords="133,5,212,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,33,120,28,115,30,86,38"/>
+<area shape="rect" id="Node000004" href="$class_video.html#af627dff9b557f78997d044e8031e5459" title="Protected constructor." alt="" coords="275,55,370,80"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="85,44,260,60,259,65,85,50"/>
+<area shape="rect" id="Node000003" href="$class_film.html#ace1972517df9083b8a68b8bac6fc20f1" title="Modifies the chapters of the film." alt="" coords="260,5,385,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,16,247,18,242,19,213,21"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="213,28,270,49,265,50,212,34"/>
+<area shape="rect" id="Node000005" href="$class_multimedia.html#a7106753d618df92d53b89328b7ecfe7f" title="Default constructor. Initializes name and path to empty strings." alt="" coords="433,55,589,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="371,65,421,67,415,68,371,70"/>
+</map>

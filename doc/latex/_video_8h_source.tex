@@ -1,0 +1,45 @@
+\doxysection{Video.\+h}
+\hypertarget{_video_8h_source}{}\label{_video_8h_source}\index{cpp/Video.h@{cpp/Video.h}}
+\doxymbox{\hyperlink{_video_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ video\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ video\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_multimedia_8h}{Multimedia.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_video_af627dff9b557f78997d044e8031e5459}{Video}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_video_adddd5c43ff870a047aa66db4edf82a7e}{Manager}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}{m\_length}};\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_video_af627dff9b557f78997d044e8031e5459}{Video}}(std::string\ name,\ std::string\ path,\ \textcolor{keywordtype}{int}\ len)\ :\ \doxymbox{\hyperlink{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}}(name,\ path),\ \doxymbox{\hyperlink{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}{m\_length}}(len)\ \{\}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_video_aec254221ef43f05ee7711012707cfef3}{getLength}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}{m\_length}};\ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_video_a944ea7522fccf467e044d8f6fa1c2e15}{setLength}}(\textcolor{keywordtype}{int}\ len)\ \{\ \doxymbox{\hyperlink{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}{m\_length}}\ =\ len;\ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_video_a3d598fde1227ad5c7c55d48f80796741}{display}}(std::ostream\ \&\ s)\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00064\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_multimedia_acc42056e7fba23e1bf31ab6f2cb2f8f5}{Multimedia::display}}(s);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ s\ <<\ \textcolor{stringliteral}{"{}Type:\ Video\ "{}}\ <<\ \textcolor{stringliteral}{"{}Length:\ "{}}\ <<\ \doxymbox{\hyperlink{class_video_a92fe049c4ecdbe7ce87b5be68f8bd5e8}{m\_length}}\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_video_a89e11497f4f200f387805b10bd42922d}{play}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00077\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ arg\ =\ \textcolor{stringliteral}{"{}open\ "{}}\ +\ \doxymbox{\hyperlink{class_multimedia_aa0b55f16e8affb857ae4aaa93314cbf2}{m\_filePath}}\ +\ \textcolor{stringliteral}{"{}\ \&"{}};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ system(arg.data());}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \}\ ;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

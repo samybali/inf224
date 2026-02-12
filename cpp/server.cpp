@@ -53,8 +53,9 @@ int main(int argc, char* argv[])
   Manager m;
 
   std::shared_ptr<Group> g = m.createGroup("g");
-  std::shared_ptr<Photo> pic = m.createPhoto("pic", "path");
-  std::shared_ptr<Video> vid = m.createVideo("vid", "path", 43);
+  std::shared_ptr<Photo> pic = m.createPhoto("pic", "Path_for_pic");
+  std::shared_ptr<Video> vid = m.createVideo("vid", "Path_for_vid", 43);
+  g->push_back(pic);
 
   auto* server =
   new TCPServer( [&](std::string const& request, std::string& response) {
@@ -64,7 +65,38 @@ int main(int argc, char* argv[])
     
     // the response that the server sends back to the client
     std::stringstream os;
-    m.displayMultimedia(request, os);
+    std::stringstream order(request);
+    std::string com, name;
+    order >> com >> name;
+
+    try {
+    if (com == "display") {
+        m.findandDisplay(name, os); 
+      } 
+      else if (com == "play") {
+          if (m.play(name)) {
+            os << "Playing " << name;
+          }
+          else {
+            os << "Could not play " << name;
+          }
+      }
+      else if (com == "remove") {
+        os << "Removing " << name << "... ";
+        m.findandRemove(name, os);
+      }
+      else if (com == "creategroup") {
+        os << "Creating group " << name << "... ";
+        m.createGroup(name);
+      }
+      else {
+          os << "Unknown command. Use display, play or remove.";
+      }
+    }
+    catch (const MultimediaException& e) {
+      os << "Error: " << e.what();
+    }
+
     response = os.str();
 
     // return false would close the connecytion with the client

@@ -1,0 +1,7 @@
+<map id="Film::Film" name="Film::Film">
+<area shape="rect" id="Node000001" title="Constructor for the Film class." alt="" coords="163,31,242,56"/>
+<area shape="rect" id="Node000002" href="$class_film.html#a71002f3f02dd2e03d9059bfc86c17118" title="Copy constructor." alt="" coords="20,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,35,100,28,100,23,150,33"/>
+<area shape="rect" id="Node000003" href="$class_film.html#a3162aa6c8d939fcd5afe49d47202cbf5" title="Assignment operator." alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,53,116,61,115,56,150,52"/>
+</map>

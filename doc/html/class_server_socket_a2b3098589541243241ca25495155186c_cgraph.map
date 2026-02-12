@@ -1,0 +1,5 @@
+<map id="ServerSocket::ServerSocket" name="ServerSocket::ServerSocket">
+<area shape="rect" id="Node000001" title="Creates a listening socket that waits for connection requests by TCP/IP clients." alt="" coords="5,5,193,31"/>
+<area shape="rect" id="Node000002" href="$class_socket.html#a1a662407744738aa56d1ccb6d7be26eb" title=" " alt="" coords="241,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,16,228,18,222,18,193,21"/>
+</map>
