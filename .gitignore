@@ -13,11 +13,15 @@
 mon_programme
 myprog
 a.out
+client
+server
 
 # --- Fichiers de dépendances générés ---
 depend-prog
 depend-myprog
 .depend
+depend-client
+depend-server
 
 # --- Fichiers Système (Junk) ---
 .DS_Store       # Poubelle Mac
